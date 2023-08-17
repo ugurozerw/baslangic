@@ -1,0 +1,71 @@
+/* GridStyles.css */
+
+.container1 {
+    display: grid;
+    grid-template-columns: 2fr 5fr;
+    gap: 4rem;
+    
+  }
+  
+.leftColumn1 {
+    background-color: #f1f2f6;
+    padding: 1rem;
+    border-radius: 9px;
+    margin-left: 120px;
+  }
+  
+.rightColumn1 {
+    /* background-color: #a29bfe; */
+    /* padding: 1rem; */
+    /* border-radius: 9px; */
+    margin-right: 120px;
+  }
+
+.container2 {
+    display: grid;
+    grid-template-columns: 2fr 5fr;
+    gap: 4rem;
+}
+
+.leftColumn2 {
+    background-color: #f1f2f6;
+    border-radius: 9px;
+    margin-left: 120px;
+    margin-top: 5px;
+}
+
+.rightColumn2 {
+    background-color: #f1f2f6;
+    border-radius: 9px;
+    margin-right: 120px;
+    margin-top: 5px;
+}
+
+.button-container {
+    display: flex;
+    width: 900px; /* Piksel değeri belirtilmeli */
+    height: 80px;
+    align-items: center;
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 0 auto;
+    background-color: #f1f2f6;
+    padding: 10px;
+    border-radius: 9px;
+    justify-content: center;
+}
+
+.custom-button {
+    flex: 1;
+    padding: 10px;
+    background-color: #3498db;
+    color: #ffffff;
+    transition: background-color 0.3s, color 0.3s;
+    box-shadow: 2px;
+    cursor: pointer;
+    border-radius: 5px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin-right: 10px; /* Butonlar arasındaki boşluğu ayarlayın */
+}

@@ -1,0 +1,89 @@
+.custom-navbar {
+  border-radius: 5px; /* Yumuşak köşeleri sağlar */
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1); /* Hafif bir gölge efekti ekler */
+  background-color: #0984e3;text-align: center;
+  }
+
+.custom-navbar-elements {
+    display: flex;
+    font-size: small;
+    color:aliceblue;
+    font-family: 'Inter', sans-serif;
+    margin-left: 10px;
+    padding: 1px;
+    padding: 0.1%;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+  }
+  
+.custom-navbar-header {
+  font-size: large;
+  color:aliceblue;
+  font-family: 'Inter', sans-serif;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin-left: 500px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.disabled-link {
+  pointer-events: none; /* Tıklanamaz yapar */
+  cursor: not-allowed; /* İmleci engeller */
+  color: #f6f4f4; /* Rengi soluk yapar */
+}
+
+
+.nav-img-pos {
+  margin-left: '150px';
+  align-items: center;
+}
+
+.just-padding {
+  padding: 5px;
+}
+
+.one-left {
+  margin-left: 1px;
+}
+
+.fifteen-left {
+  margin-left: 15px;
+}
+
+.bg-shymoment{
+  background-color: #fdcb6e;
+}
+
+.col-dif {
+  color: #ffeaa7;
+}
+
+.col-white {
+  color: white;
+}
+
+.pad-for-caros {
+  padding: 10px;
+}
+
+.bor-rad-for-caros {
+  border-radius: 15px;
+}
+
+.better-btn {
+  height: 30px;
+  width: 120px;
+  white-space: nowrap;
+  margin-right: 200px;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  background-color: #00b894;
+  color: #ffffff;
+  border-radius: 7px;
+  font-family: 'Inter', sans-serif;
+}
