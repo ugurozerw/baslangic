@@ -32,7 +32,11 @@ const CustomNavbar = () => {
           </Nav>
 
         </Navbar.Collapse>
-        <Button className='better-btn' variant="success">Kullanıcı girişi</Button>
+
+       <Button className='better-btn'>
+       <Link className="link-spec" to="/LogIn" >Kullanıcı girişi</Link>
+       </Button>
+
       </Navbar></>
   );
 }

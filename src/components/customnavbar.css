@@ -83,8 +83,12 @@
   justify-content: center;
   display: flex;
   align-items: center;
-  background-color: #00b894;
-  color: #ffffff;
+  background-color: #fdcb6e;
   border-radius: 7px;
-  font-family: 'Inter', sans-serif;
+  font-family: 'Inter', sans-serif;  
+  color: #ffffff;
+}
+
+.link-spec {
+  text-decoration: none;
 }
