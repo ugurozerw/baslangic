@@ -1,11 +1,10 @@
 import './App.css'
-// import CarouselFadeExample from './components/CarouselFadeExample'
 import CustomNavbar from './components/CustomNavbar'
-// import GridRow from './components/GridRow'
 import {BrowserRouter as Router, Route, Routes} from "react-router-dom"
 import Hakkimizda from './pages/Hakkimizda'
 import Hizmetler from './pages/Hizmetler'
 import Iletisim from './pages/Iletisim'
+import Anasayfa from './pages/Anasayfa'
 
 
 function App() {
@@ -15,6 +14,7 @@ function App() {
     <div>
       <CustomNavbar></CustomNavbar>
       <Routes>
+        <Route path="/" element={<Anasayfa></Anasayfa>}></Route>
         <Route path="/Hakkimizda" element={<Hakkimizda></Hakkimizda>}></Route>
         <Route path="/Hizmetler" element={<Hizmetler></Hizmetler>}></Route>
         <Route path="/Iletisim" element={<Iletisim></Iletisim>}></Route>
