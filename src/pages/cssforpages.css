@@ -13,7 +13,7 @@
     position: relative;
   }
   
-  .back-link {
+.back-link {
     position: absolute;
     top: 20px;
     left: 20px;
@@ -23,4 +23,111 @@
     border-radius: 5px;
     color: #333;
   }
+
+.con {
+    display: flex;
+    justify-content: space-between;
+  }
   
+.half {
+    flex: 1;
+  }
+
+.formic{
+  margin-bottom: 30px;
+  padding: 50px;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.loginh1 {
+  margin-top: 10px;
+  margin-left: 140px;
+  text-align: center; /* Başlığı ortala */
+  padding: 20px; /* İçerik ile çerçeve arasında boşluk */
+  border: 2px solid #050505; /* Kırmızı bir çerçeve ekleyin */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 8px; /* Çerçeve köşelerini yuvarlayın */
+  background-color: #dfe6e9; /* Arka plan rengi */
+  display: inline-block; /* Başlığı içeriğe sığdır */
+  font-style: italic;
+}
+
+.wavedesign1 {
+  font-family: 'Wavefont', cursive;
+  margin-top: 0px;
+  margin-left: 160px;
+}
+
+.red-text {
+  color: #d63031;
+}
+
+.better-btn2 {
+  height: 30px;
+  width: 120px;
+  white-space: nowrap;
+  margin-right: 200px;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  background-color: #fdcb6e;
+  border-radius: 7px;
+  font-family: 'Inter', sans-serif;  
+  color: #ffffff;
+  
+}
+
+.better-btn2:hover {
+  color: #b2bec3;
+  box-shadow: 1px 3px 1px 2px;
+  background-color: #e17055;
+}
+
+.loginbackgroundpart2{
+  background-color: #dfe6e9;
+}
+
+.shadowofcontrol {
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.btnback-pos {
+  margin-top: 50px;
+  margin-left: 315px;
+  height: 50px;
+  width: 50px;
+  color: #ffffff;
+  background-color: #fdcb6e;
+}
+
+.btnback-pos:hover {
+  color: #b2bec3;
+  background-color: #e17055;
+  box-shadow: 1px 3px 1px 2px;
+}
+
+.kayan-yazi {
+  white-space: nowrap;
+  animation: kayanYazi 5s ease-in-out infinite;
+  font-size: 40px;
+}
+
+@keyframes kayanYazi {
+  0%, 100% {
+      transform: translateX(100%);
+      color: red;
+  }
+  25% {
+      color: orange;
+  }
+  50% {
+      color: yellow;
+  }
+  75% {
+      color: green;
+  }
+}
+
+
