@@ -3,7 +3,7 @@ import { Button } from 'react-bootstrap';
 import { BsFillArrowLeftCircleFill } from 'react-icons/bs';
 import { Link } from 'react-router-dom';
 
-function RandomImageGenerator() {
+const RandomImageGenerator = () => {
   const [randomNum, setRandomNum] = useState(null);
   const [isInvalid, setIsInvalid] = useState(false);
   const brokenImageNumbers = [138, 286, 968, 394, 561, 751, 332, 589, 207, 587, 
@@ -31,20 +31,36 @@ function RandomImageGenerator() {
             className='signup-bckgrnd'
             src={`https://picsum.photos/id/${randomNum}/750/715`}
             alt={`Rastgele Resim ${randomNum}`}
-            style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+            style={{
+              width: '100%',
+              height: '100%',
+              objectFit: 'cover',
+            }}
           />
-          <div style={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)', color: 'white', textAlign: 'center' }}>
+          <div style={{
+            position: 'absolute',
+            top: '25%',
+            left: '50%',
+            transform: 'translate(-50%, -50%)',
+            color: 'white',
+            textAlign: 'center',
+          }}>
             <div className='disabled-link'>
               <Link to="/">
                 <Button className="btnback-pos-signup" size="md">
                   <BsFillArrowLeftCircleFill size={25} />
                 </Button>
               </Link>
+              <div style={{
+                display: 'inline-block',
+                float: 'right',
+              }}>
+                <h1>Merhaba, Bu bir metin örneğidir</h1>
+                <p>İstediğiniz metni buraya ekleyebilirsiniz.</p>
+              </div>
             </div>
-            
-            <h1>Merhaba, Bu bir metin örneğidir</h1>
-            <p>İstediğiniz metni buraya ekleyebilirsiniz.</p>
           </div>
+          
         </div>
       )}
     </div>
