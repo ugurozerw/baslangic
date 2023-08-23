@@ -2,11 +2,12 @@ import React, { useState, useEffect } from 'react';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 import { BsFillArrowLeftCircleFill } from 'react-icons/bs';
+import { Link } from "react-router-dom"
 import './cssforpages.css';
 
 
 // Bozuk resimler
-const brokenImageNumbers = [138, 286, 968, 394, 561, 751, 332, 589, 207, 587, 843, 224, 897, 636, 333, 462, 624];
+const brokenImageNumbers = [138, 286, 968, 394, 561, 751, 332, 589, 207, 587, 843, 224, 897, 636, 333, 462, 624, 748, 752, 761];
 
 function RandomImageGenerator() {
   const [randomNum, setRandomNum] = useState(null);
@@ -50,11 +51,13 @@ function RandomImageGenerator() {
           </div>
           <div className={`half loginbackgroundpart2 ${isInvalid ? 'invalid-form' : ''}`}>
             <h1 className={`${isInvalid ? 'invalid-text' : ''}`}>
-              <span>
-                <Button className="btnback-pos" size="md">
-                  <BsFillArrowLeftCircleFill size={25} />
-                </Button>
-              </span>
+              <Link to="/">
+                <span>
+                  <Button className="btnback-pos" size="md">
+                    <BsFillArrowLeftCircleFill size={25} />
+                  </Button>
+                </span>
+              </Link>
               <h1 className="wavedesign1">
                 DFJGAODĞGFJSJDOANGPJODNG AĞOSGJDNAĞSOGLJFNAOGJLSDNOSLJDAGNOĞSGJDNAOSĞASFOALSFSDJANONGAOSP
                 ASDIOFGHĞASJDGOSDOGIJKASDGĞİSDGJ

@@ -10,7 +10,7 @@ const Anasayfa = () => {
     <>
     <CustomNavbar></CustomNavbar>
     <CarouselFadeExample/> 
-    <hr></hr>
+    <hr />
     <GridRow/>
     </>
   )
