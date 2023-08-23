@@ -130,4 +130,27 @@
   }
 }
 
+.signup-bckgrnd {
+  margin: 0;
+  padding: 0;
+  background-image: url('resim-adresi.jpg'); /* Arka plan resminin yolu */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed; /* Sayfanın kaydırıldığında arka planın sabit kalmasını sağlar */
+}
 
+.btnback-pos-signup {
+  display: flex;
+  justify-content: center; /* Yatayda ortala */
+  align-items: center; /* Dikeyde ortala */
+}
+
+.disabled-link {
+  pointer-events: none; /* Tıklanamaz yapar */
+  cursor: not-allowed; /* İmleci engeller */
+}
+
+.btnback-pos-signup:not(.disabled-link) {
+  pointer-events: auto; /* Tıklanabilir yapar */
+  cursor: pointer; /* İmleci açar */
+}
