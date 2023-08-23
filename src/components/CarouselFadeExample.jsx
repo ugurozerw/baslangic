@@ -4,7 +4,7 @@ import Carousel from 'react-bootstrap/Carousel';
 function CarouselFadeExample() {
   return (
     <div className='pad-for-caros car-small'>
-    <Carousel fade interval={1000}> {/* interval prop'u ile otomatik geçiş süresini belirleyin */}
+    <Carousel fade interval={1250}> {/* interval prop'u ile otomatik geçiş süresini belirleyin */}
       <Carousel.Item className=''>
         <img className='bor-rad-for-caros' src="https://picsum.photos/id/237/1460/350" />
         <Carousel.Caption>
