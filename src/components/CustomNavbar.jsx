@@ -15,7 +15,7 @@ const CustomNavbar = () => {
       <Navbar className='custom-navbar' expand="lg">
         <Nav.Link className="custom-navbar-header disabled-link">Navbar Örneği</Nav.Link>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav">
+        <Navbar.Collapse className='cen' id="basic-navbar-nav">
           <Nav className="ml-auto">
           <div className="container">
             
@@ -31,11 +31,23 @@ const CustomNavbar = () => {
           <Link to="/Iletisim" className="custom-navbar-elements">İletişim</Link>
           </Nav>
 
+          
+          <Button className='better-btn'>
+            <Link className="link-spec" to="/LogIn" >Giriş yap</Link>
+          </Button>
+
+          <Button className='sign-up-btn'>
+            <Link className="link-spec" to="/SignUp" >Kaydol</Link>
+          </Button>
+        
+
         </Navbar.Collapse>
 
-       <Button className='better-btn'>
-       <Link className="link-spec" to="/LogIn" >Kullanıcı girişi</Link>
-       </Button>
+        
+
+       
+
+       
 
       </Navbar></>
   );

@@ -6,6 +6,7 @@ import Hizmetler from './pages/Hizmetler'
 import Iletisim from './pages/Iletisim'
 import Anasayfa from './pages/Anasayfa'
 import LogIn from './pages/LogIn'
+import SignUp from './pages/SignUp'
 
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
     <div>
       <Routes>
         <Route path="/LogIn" element={<LogIn></LogIn>}></Route>
+        <Route path="/SignUp" element={<SignUp></SignUp>}></Route>
       </Routes>
     </div>
     </>

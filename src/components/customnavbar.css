@@ -78,7 +78,8 @@
   height: 30px;
   width: 120px;
   white-space: nowrap;
-  margin-right: 200px;
+  padding: 10px;
+  margin-left: 180px;
   text-align: center;
   justify-content: center;
   display: flex;
@@ -94,6 +95,32 @@
 }
 
 .better-btn:hover {
-  background-color: #e17055;
-  box-shadow: 1px 3px 1px 2px;
+  background-color: #fab1a0;
+  box-shadow: 2px 2px 2px 2px;
+}
+
+.sign-up-btn{
+  height: 30px;
+  width: 120px;
+  white-space: nowrap;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  margin-left: 15px;
+  background-color: #ffeaa7;
+  border-radius: 7px;
+  font-family: 'Inter', sans-serif;  
+}
+
+.sign-up-btn:hover {
+  background-color: #fab1a0;
+  box-shadow: 2px 2px 2px 2px;
+}
+
+.cen{
+  align-items: center;
+  text-align: center;
+  white-space: nowrap;
+  display: flex;
 }
