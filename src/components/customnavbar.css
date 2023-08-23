@@ -124,3 +124,15 @@
   white-space: nowrap;
   display: flex;
 }
+
+.sort-btns {
+  background-color: #00b894;
+  color: #ffffff;
+  border-radius: 8px;
+  height: 40px;
+  /* width: 120px; */
+  margin: 0 10px; /* Sağ ve sol tarafında boşluk */
+  white-space: nowrap;
+  text-align: center;
+  align-items: center;
+}
