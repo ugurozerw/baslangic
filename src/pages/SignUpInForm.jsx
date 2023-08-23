@@ -1,9 +1,21 @@
-import React from 'react'
+import React from 'react';
+import {Formik} from Formik;
 
-const SignUpInForm = () => {
-  return (
-    <div>SignUpInForm</div>
-  )
-}
+// function Formula() {
+//     return (
+//         <div>
+//             <Formik 
+//                 initialValues={{
+//                     email:"",
+//                     password:""
+//             }}
+//             onSubmit={(data: Values) => console.log(data)}>
 
-export default SignUpInForm
+                
+
+//             </Formik>
+//         </div>
+//     )
+// }
+
+export default Formula;
