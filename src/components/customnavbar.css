@@ -15,9 +15,9 @@
     justify-content: center;
     align-items: center;
     font-size: 15px;
-    text-decoration: none; /* Altını çizmeyi kaldırır */
+    text-decoration: none;
   }
-  
+
 .custom-navbar-header {
   font-size: large;
   color:aliceblue;
@@ -75,8 +75,8 @@
 }
 
 .better-btn {
-  height: 30px;
-  width: 120px;
+  height: 25px;
+  width: 100px;
   white-space: nowrap;
   padding: 10px;
   margin-left: 180px;
@@ -100,8 +100,8 @@
 }
 
 .sign-up-btn{
-  height: 30px;
-  width: 120px;
+  height: 25px;
+  width: 100px;
   white-space: nowrap;
   text-align: center;
   justify-content: center;

@@ -20,7 +20,7 @@ const CustomNavbar = () => {
           <div className="container">
             
             <img
-              src="https://picsum.photos/id/59/25/25"
+              src="https://picsum.photos/id/62/25/25"
               alt="Logo"
               className='nav-img-pos'/>
             </div>
@@ -31,15 +31,13 @@ const CustomNavbar = () => {
           <Link to="/Iletisim" className="custom-navbar-elements">İletişim</Link>
           </Nav>
 
-          
-          <Button className='better-btn'>
-            <Link className="link-spec" to="/LogIn" >Giriş yap</Link>
-          </Button>
+          <Link className="link-spec" to="/LogIn" >
+          <Button className='better-btn'>Giriş yap</Button>
+          </Link>
 
-          <Button className='sign-up-btn'>
-            <Link className="link-spec" to="/SignUp" >Kaydol</Link>
-          </Button>
-        
+          <Link className="link-spec" to="/SignUp" >
+          <Button className='sign-up-btn'>Kaydol</Button>
+          </Link>
 
         </Navbar.Collapse>
 
