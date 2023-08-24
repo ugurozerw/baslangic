@@ -55,6 +55,7 @@ const RandomImageGenerator = () => {
                 display: 'inline-block',
                 float: 'right',
               }}>
+                {/* Sitenin geri kalanını burada kuracağım */}
                 <h1>Merhaba, Bu bir metin örneğidir</h1>
                 <p>İstediğiniz metni buraya ekleyebilirsiniz.</p>
               </div>
