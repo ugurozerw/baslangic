@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Button } from 'react-bootstrap';
 import { BsFillArrowLeftCircleFill } from 'react-icons/bs';
 import { Link } from 'react-router-dom';
+import Step4Sign from './Step4Sign';
 
 const RandomImageGenerator = () => {
   const [randomNum, setRandomNum] = useState(null);
@@ -55,9 +56,9 @@ const RandomImageGenerator = () => {
                 display: 'inline-block',
                 float: 'right',
               }}>
-                {/* Sitenin geri kalanını burada kuracağım */}
-                <h1>Merhaba, Bu bir metin örneğidir</h1>
-                <p>İstediğiniz metni buraya ekleyebilirsiniz.</p>
+                <div className='spec4step4form'>
+                <Step4Sign></Step4Sign>
+                </div>
               </div>
             </div>
           </div>

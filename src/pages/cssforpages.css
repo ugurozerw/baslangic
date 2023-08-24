@@ -154,3 +154,14 @@
   pointer-events: auto; /* Tıklanabilir yapar */
   cursor: pointer; /* İmleci açar */
 }
+
+.spec4step4form {
+  display: flex;
+  justify-content: center; /* Yatayda ortala */
+  align-items: center; /* Dikeyde ortala */
+}
+
+.spec4step4form:not(.disabled-link) {
+  pointer-events: auto; /* Tıklanabilir yapar */
+  cursor: pointer; /* İmleci açar */
+}
