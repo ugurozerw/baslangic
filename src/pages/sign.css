@@ -67,7 +67,7 @@
     outline: none; /* Odak çerçevesini kaldıralım (isteğe bağlı) */
   }
  /* aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa */ 
-  .form-step {
+  /* .form-step {
     position: absolute;
     top: 0;
     left: 0;
@@ -83,7 +83,7 @@
   .form-step.step-2 {
     opacity: 1;
     transform: translateX(-100%);
-  }
+  } */
   
   /* Diğer aşamalar için benzer stil tanımları ekleyin */
   
