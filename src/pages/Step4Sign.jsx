@@ -37,6 +37,12 @@ function Step4Sign() {
     window.location.href = '/';
   };
 
+  const { firstName, lastName } = formData;
+
+  // Görmek için
+  console.log('firstName:', firstName);
+  console.log('lastName:', lastName);
+
   return (
     <div>
       <div className="form-container">
