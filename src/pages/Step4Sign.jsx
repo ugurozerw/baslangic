@@ -39,45 +39,47 @@ function Step4Sign() {
 
   return (
     <div>
+      <div className="form-container">
       {currentStep === 1 && (
-  <div className="form-step">
-    <h1 className='yazi'>Aşama 1: Temel Bilgiler</h1>
-    <input
-      type="text"
-      name="firstName"
-      placeholder="Ad"
-      value={formData.firstName}
-      onChange={handleChange}
-      className="form-input"
-    />
-    <input
-      type="text"
-      name="lastName"
-      placeholder="Soyad"
-      value={formData.lastName}
-      onChange={handleChange}
-      className="form-input"
-    />
-    <button onClick={nextStep} className="form-button">İleri</button>
-  </div>
-)}
+        <div className={`form-step step-${currentStep}`}>
+          <h1 className='yazi'>Aşama 1: Temel Bilgiler</h1>
+          <input
+            type="text"
+            name="firstName"
+            placeholder="Ad"
+            value={formData.firstName}
+            onChange={handleChange}
+            className="form-input"
+          />
+          <input
+            type="text"
+            name="lastName"
+            placeholder="Soyad"
+            value={formData.lastName}
+            onChange={handleChange}
+            className="form-input"
+          />
+          <button onClick={nextStep} className="form-button">İleri</button>
+        </div>
+      )}
 
-
-{currentStep === 2 && (
-  <div className="form-step">
-    <h1 className='yazi'>Aşama 2: Adres Bilgileri</h1>
-    <input
-      type="text"
-      name="address"
-      placeholder="Adres"
-      value={formData.address}
-      onChange={handleChange}
-      className="form-input"
-    />
-    <button onClick={prevStep} className="form-button">Geri</button>
-    <button onClick={nextStep} className="form-button">İleri</button>
-  </div>
-)}
+      {currentStep === 2 && (
+        <div className={`form-step step-${currentStep}`}>
+          <h1 className='yazi'>Aşama 2: Adres Bilgileri</h1>
+          <input
+            type="text"
+            name="address"
+            placeholder="Adres"
+            value={formData.address}
+            onChange={handleChange}
+            className="form-input"
+          />
+          <button onClick={prevStep} className="form-button">Geri</button>
+          <button onClick={nextStep} className="form-button">İleri</button>
+        </div>
+      )}
+    </div>
+  
 
 {currentStep === 3 && (
   <div className="form-step">

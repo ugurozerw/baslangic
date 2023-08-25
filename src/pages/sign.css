@@ -51,6 +51,7 @@
   }
 
   /* Input alanının varsayılan stilleri */
+/* Input alanının varsayılan stilleri */
 .form-input {
     width: 100%;
     padding: 12px;
@@ -61,29 +62,15 @@
     transition: border-color 0.3s ease; /* Geçiş efekti için alt çizgi rengi */
   }
   
-  /* Input alanına odaklandığında alt çizgi rengini değiştirelim */
+  /* Input alanına odaklandığında alt çizgi rengini ve arkaplan rengini değiştirelim */
   .form-input:focus {
     border-color: #007bff; /* Odaklandığında alt çizgi rengini değiştirelim */
+    background-color: #f0f0f0; /* Odaklandığında arkaplan rengini değiştirelim */
     outline: none; /* Odak çerçevesini kaldıralım (isteğe bağlı) */
   }
+  
  /* aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa */ 
-  /* .form-step {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
-  }
   
-  .form-step.step-1 {
-    opacity: 1;
-    transform: translateX(0);
-  }
-  
-  .form-step.step-2 {
-    opacity: 1;
-    transform: translateX(-100%);
-  } */
   
   /* Diğer aşamalar için benzer stil tanımları ekleyin */
   
