@@ -38,15 +38,8 @@ const CustomNavbar = () => {
           <Link className="link-spec" to="/SignUp" >
           <Button className='sign-up-btn'>Kaydol</Button>
           </Link>
-
+          
         </Navbar.Collapse>
-
-        
-
-       
-
-       
-
       </Navbar></>
   );
 }
