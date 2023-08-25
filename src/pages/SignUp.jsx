@@ -9,7 +9,8 @@ const RandomImageGenerator = () => {
   const [isInvalid, setIsInvalid] = useState(false);
   const brokenImageNumbers = [138, 286, 968, 394, 561, 751, 332, 589, 207, 587, 
                               843, 224, 897, 636, 333, 462, 624, 748, 752, 761, 
-                              934, 105, 720, 734, 753];
+                              934, 105, 720, 734, 753, 422, 750, 854, 470, 749,
+                              725,];
 
   useEffect(() => {
     generateRandomNumber();

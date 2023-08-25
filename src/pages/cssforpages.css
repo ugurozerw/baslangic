@@ -143,6 +143,7 @@
   display: flex;
   justify-content: center; /* Yatayda ortala */
   align-items: center; /* Dikeyde ortala */
+  margin-top: 50%;
 }
 
 .disabled-link {

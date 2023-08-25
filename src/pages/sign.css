@@ -1,0 +1,89 @@
+/* Genel form çerçevesi */
+.form-step {
+    border: 2px solid #007bff;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 400px;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Başlık metni */
+  .yazi {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  /* Giriş alanları ve seçim kutuları */
+  .form-input,
+  .form-select,
+  .form-textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  /* Butonlar */
+  .form-button {
+    color: #ffffff;
+    background-color: #fdcb6e;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Hover efektleri için geçişler */
+  }
+  
+  .form-button:hover {
+    color: #b2bec3;
+    background-color: #e17055;
+    box-shadow: 1px 3px 1px 2px;
+  }
+  
+  .form-button + .form-button {
+    margin-left: 10px; /* İki buton arasına 10 piksel boşluk verir. İhtiyaca göre ayarlayabilirsiniz. */
+  }
+
+  /* Input alanının varsayılan stilleri */
+.form-input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: none;
+    border-bottom: 2px solid #ccc; /* Alt çizgi ekleyelim */
+    font-size: 16px;
+    transition: border-color 0.3s ease; /* Geçiş efekti için alt çizgi rengi */
+  }
+  
+  /* Input alanına odaklandığında alt çizgi rengini değiştirelim */
+  .form-input:focus {
+    border-color: #007bff; /* Odaklandığında alt çizgi rengini değiştirelim */
+    outline: none; /* Odak çerçevesini kaldıralım (isteğe bağlı) */
+  }
+ /* aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa */ 
+  .form-step {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+  }
+  
+  .form-step.step-1 {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  
+  .form-step.step-2 {
+    opacity: 1;
+    transform: translateX(-100%);
+  }
+  
+  /* Diğer aşamalar için benzer stil tanımları ekleyin */
+  
