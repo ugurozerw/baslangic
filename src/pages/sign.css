@@ -50,27 +50,27 @@
     margin-left: 10px; /* İki buton arasına 10 piksel boşluk verir. İhtiyaca göre ayarlayabilirsiniz. */
   }
 
-  /* Input alanının varsayılan stilleri */
-/* Input alanının varsayılan stilleri */
+
+/* Varsayılan stil */
 .form-input {
     width: 100%;
     padding: 12px;
     margin-bottom: 15px;
     border: none;
-    border-bottom: 2px solid #ccc; /* Alt çizgi ekleyelim */
+    border-bottom: 2px solid #ccc;
     font-size: 16px;
-    transition: border-color 0.3s ease; /* Geçiş efekti için alt çizgi rengi */
+    transition: all 0.3s ease; /* Tüm özelliklerde geçiş efekti */
   }
   
-  /* Input alanına odaklandığında alt çizgi rengini ve arkaplan rengini değiştirelim */
+  /* Odaklandığında boyutu büyütelim */
   .form-input:focus {
-    border-color: #007bff; /* Odaklandığında alt çizgi rengini değiştirelim */
-    background-color: #f0f0f0; /* Odaklandığında arkaplan rengini değiştirelim */
-    outline: none; /* Odak çerçevesini kaldıralım (isteğe bağlı) */
+    border-color: #007bff;
+    transform: scale(1.05); /* Boyutu büyütme */
+    box-shadow: 0px 0px 5px rgba(0, 123, 255, 0.5); /* Gölge ekleyelim */
+    outline: none;
   }
   
- /* aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa */ 
   
   
-  /* Diğer aşamalar için benzer stil tanımları ekleyin */
+
   
