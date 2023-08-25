@@ -10,7 +10,7 @@ import './cssforpages.css';
 const brokenImageNumbers = [138, 286, 968, 394, 561, 751, 332, 589, 207, 587, 
                             843, 224, 897, 636, 333, 462, 624, 748, 752, 761, 
                             934, 105, 720, 734, 753, 422, 750, 854, 470, 749,
-                            725, 359, 895];
+                            725, 359, 895, 647, 150];
 
 function RandomImageGenerator() {
   const [randomNum, setRandomNum] = useState(null);
@@ -90,9 +90,9 @@ const validateForm = ({ email, password }) => {
           </span>
         </Link>
         <h1 className="wavedesign1">
-          DFJGAODĞGFJSJDOANGPJODNG AĞOSGJDNAĞSOGLJ
+          DFJGAODĞGFJSJDOANGPJODNGAAĞOSGJDNAĞSOGLJ
           FNAOGJLSDNOSLJDAGNOĞSGJDNAOSĞASFOALSFSDJ
-          ANONGAOSPASDIOFGHĞASJDGOSDOGIJKASDGĞİSDGJ
+          ANONGAOSPASDIOFGHĞASJDGOSDOGIJKASDGĞİSDGASD
         </h1>
       </h1>
       <h1 className={`loginh1 ${isInvalid ? 'invalid-text' : ''}`}>
