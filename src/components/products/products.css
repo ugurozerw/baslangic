@@ -1,5 +1,7 @@
 /* VeriCekmeComponent.css */
 
+/* Bootstrap classes for responsiveness and layout */
+
 .urun-kartlari {
     display: flex;
     flex-wrap: wrap;
@@ -18,8 +20,9 @@
     position: relative;
     opacity: 1;
     pointer-events: auto;
-    
   }
+  
+  /* Your custom styles */
   
   .urun-karti:hover {
     transform: scale(1.05);
@@ -34,7 +37,7 @@
   }
   
   .urun-karti:hover img {
-    transform: scale(1.2); /* Resmi büyütme */
+    transform: scale(1.2);
   }
   
   .urun-karti .aciklama {
@@ -60,11 +63,11 @@
   .urun-karti .aciklama p {
     opacity: 1;
     visibility: visible;
-    max-height: 1000px; /* İhtiyaca göre ayarlayabilirsiniz, yeterli bir değer seçin */
+    max-height: 1000px;
   }
   
   .urun-karti:hover .aciklama p {
-    max-height: 200px; /* İhtiyaca göre ayarlayabilirsiniz */
+    max-height: 200px;
     overflow: visible;
   }
   

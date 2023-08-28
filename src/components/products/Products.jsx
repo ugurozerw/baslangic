@@ -25,7 +25,7 @@ const VeriCekmeComponent = () => {
 
   const UrunKarti = ({ item }) => {
     return (
-      <Col key={item.id} className="mb-4">
+      <Col xs={12} sm={6} md={6} lg={4} xl={3} key={item.id} className="mb-4">
         <Card className="urun-karti">
           <Card.Img src={item.image} alt={item.title} />
           <Card.Body>
@@ -44,7 +44,7 @@ const VeriCekmeComponent = () => {
   return (
     <Container>
       <h1 className="my-4">Ürünler</h1>
-      <Row xs={1} md={3} className="urun-kartlari">
+      <Row className="urun-kartlari">
         {veri.map(item => (
           <UrunKarti key={item.id} item={item} />
         ))}
