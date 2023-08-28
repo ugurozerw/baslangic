@@ -4,44 +4,53 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
-import './products.css'; // CSS dosyasını ekleyin
+import './products.css';
 
-function VeriCekmeComponent() {
+const VeriCekmeComponent = () => {
   const [veri, setVeri] = useState([]);
 
+  const fetchData = async () => {
+    try {
+      const response = await fetch('https://fakestoreapi.com/products');
+      const data = await response.json();
+      setVeri(data);
+    } catch (error) {
+      console.error('Veri çekme hatası:', error);
+    }
+  };
+
   useEffect(() => {
-    fetch('https://fakestoreapi.com/products')
-      .then(response => response.json())
-      .then(data => {
-        setVeri(data);
-      })
-      .catch(error => {
-        console.error('Veri çekme hatası:', error);
-      });
+    fetchData();
   }, []);
+
+  const UrunKarti = ({ item }) => {
+    return (
+      <Col key={item.id} className="mb-4">
+        <Card className="urun-karti">
+          <Card.Img src={item.image} alt={item.title} />
+          <Card.Body>
+            <Card.Title>{item.title}</Card.Title>
+            <div className="aciklama">
+              <p>{item.description}</p>
+            </div>
+            <Card.Text>Fiyat: {item.price} TL</Card.Text>
+            <button className="btn btn-primary">Sepete Ekle</button>
+          </Card.Body>
+        </Card>
+      </Col>
+    );
+  };
 
   return (
     <Container>
       <h1 className="my-4">Ürünler</h1>
-      <Row xs={1} md={3} className="urun-kartlari"> {/* CSS class ekleyin */}
+      <Row xs={1} md={3} className="urun-kartlari">
         {veri.map(item => (
-          <Col key={item.id} className="mb-4">
-            <Card className="urun-karti"> {/* CSS class ekleyin */}
-              <Card.Img src={item.image} alt={item.title} />
-              <Card.Body>
-                <Card.Title>{item.title}</Card.Title>
-                <Card.Text>
-                  {item.description}
-                </Card.Text>
-                <Card.Text>Fiyat: {item.price} TL</Card.Text>
-                <button className="btn btn-primary">Sepete Ekle</button>
-              </Card.Body>
-            </Card>
-          </Col>
+          <UrunKarti key={item.id} item={item} />
         ))}
       </Row>
     </Container>
   );
-}
+};
 
 export default VeriCekmeComponent;
