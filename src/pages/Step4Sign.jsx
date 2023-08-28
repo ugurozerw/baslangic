@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Swal from 'sweetalert2';
+
 import "./sign.css"
 
 function Step4Sign() {
@@ -71,10 +72,19 @@ const nextStep3 = () => {
     setCurrentStep(currentStep - 1);
   };
 
+    
+    
   const handleSubmit = (e) => {
     e.preventDefault();
     // Form işlemleri burada yapılabilir.
     console.log(formData);
+
+    Swal.fire({
+      icon: 'success',
+      title: 'Kaydedildi!',
+      showConfirmButton: false, // Sadece otomatik olarak kapatılsın
+      timer: 1500, // İletişim kutusunun ne kadar süre gösterileceğini belirtir (milisaniye cinsinden)
+    });
 
     // Onaylandığında "/" adresine yönlendir
     window.location.href = '/';
@@ -177,6 +187,7 @@ const nextStep3 = () => {
       </div>
     <button onClick={prevStep} className="form-button">Geri</button>
     <button onClick={handleSubmit} className="form-button">Onayla</button>
+    
   </div>
 )}
 </div>
