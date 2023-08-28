@@ -20,7 +20,34 @@ function Step4Sign() {
     });
   };
 
-  const nextStep = () => {
+  const nextStep1 = () => {
+    // Tüm gerekli alanları kontrol et
+    if (formData.firstName === '' || formData.lastName === '') {
+      alert('İsim ve soyad bilgisini lütfen giriniz.');
+    } else {
+      setCurrentStep(currentStep + 1);
+    }
+  };
+
+  const nextStep2 = () => {
+    // Tüm gerekli alanları kontrol et
+    if (formData.address === '') {
+      alert('Adres bilgisini lütfen giriniz.');
+    } else {
+      setCurrentStep(currentStep + 1);
+    }
+  };
+
+  const nextStep3 = () => {
+    // Tüm gerekli alanları kontrol et
+    if (formData.paymentMethod === '') {
+      alert('Ödeme yöntemini lütfen seçiniz.');
+    } else {
+      setCurrentStep(currentStep + 1);
+    }
+  };
+
+  const nextStep4 = () => {
     setCurrentStep(currentStep + 1);
   };
 
@@ -65,7 +92,7 @@ function Step4Sign() {
             onChange={handleChange}
             className="form-input"
           />
-          <button onClick={nextStep} className="form-button">İleri</button>
+          <button onClick={nextStep1} className="form-button">İleri</button>
         </div>
       )}
 
@@ -81,7 +108,7 @@ function Step4Sign() {
             className="form-input"
           />
           <button onClick={prevStep} className="form-button">Geri</button>
-          <button onClick={nextStep} className="form-button">İleri</button>
+          <button onClick={nextStep2} className="form-button">İleri</button>
         </div>
       )}
     </div>
@@ -101,7 +128,7 @@ function Step4Sign() {
       <option value="paypal">PayPal</option>
     </select>
     <button onClick={prevStep} className="form-button">Geri</button>
-    <button onClick={nextStep} className="form-button">İleri</button>
+    <button onClick={nextStep3} className="form-button">İleri</button>
   </div>
 )}
 
@@ -117,19 +144,21 @@ function Step4Sign() {
       className="form-textarea"
     ></textarea>
     <button onClick={prevStep} className="form-button">Geri</button>
-    <button onClick={nextStep} className="form-button">İleri</button>
+    <button onClick={nextStep4} className="form-button">İleri</button>
   </div>
 )}
 
 
 {currentStep === 5 && (
-  <div className="form-step">
-    <h1 className='yazi2'>Aşama 5: Onay</h1>
-    <p>Ad: {formData.firstName}</p>
-    <p>Soyad: {formData.lastName}</p>
-    <p>Adres: {formData.address}</p>
-    <p>Ödeme Yöntemi: {formData.paymentMethod}</p>
-    <p>Ek Bilgiler: {formData.additionalInfo}</p>
+  <div className="form-step yazi">
+    <h1 className=''>Aşama 5: Onay</h1>
+      <div className='mini-yazi'>
+        <p>Ad: {formData.firstName}</p>
+        <p>Soyad: {formData.lastName}</p>
+        <p>Adres: {formData.address}</p>
+        <p>Ödeme Yöntemi: {formData.paymentMethod}</p>
+        {/* <p>Ek Bilgiler: {formData.additionalInfo}</p> */}
+      </div>
     <button onClick={prevStep} className="form-button">Geri</button>
     <button onClick={handleSubmit} className="form-button">Onayla</button>
   </div>
