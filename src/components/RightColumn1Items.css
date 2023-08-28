@@ -1,0 +1,41 @@
+/* RightColumn1Items.css */
+
+.button-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Üç sütun */
+  grid-template-rows: repeat(2, 1fr); /* İki satır */
+  gap: 5px; /* Butonlar arasındaki boşluk */
+  max-width: 1102px;
+  margin: 0 auto;
+  background-color: #f1f2f6;
+  height: 100px;
+  width: 890px;
+}
+
+.sort-btns {
+  padding: 5px 10px; /* Daha az padding */
+  font-size: 14px; /* Buton yazı boyutu */
+  text-align: center;
+  box-sizing: border-box;
+}
+
+@media (max-width: 1102px) {
+  .button-container {
+    grid-template-columns: repeat(2, 1fr); /* İki sütun */
+    grid-template-rows: repeat(3, 1fr); /* Üç satır */
+  }
+}
+
+@media (max-width: 768px) {
+  .button-container {
+    grid-template-columns: repeat(2, 1fr); /* İki sütun */
+    grid-template-rows: repeat(3, 1fr); /* Üç satır */
+  }
+}
+
+@media (max-width: 480px) {
+  .button-container {
+    grid-template-columns: repeat(1, 1fr); /* Tek sütun */
+    grid-template-rows: auto; /* Otomatik yükseklik */
+  }
+}

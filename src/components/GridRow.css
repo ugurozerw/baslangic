@@ -15,10 +15,11 @@
   }
   
 .rightColumn1 {
-    /* background-color: #a29bfe; */
-    /* padding: 1rem; */
-    /* border-radius: 9px; */
+    background-color: #f1f2f6;
+    border-radius: 9px; 
     margin-right: 120px;
+    height: 100px;
+    width: 800px;
   }
 
 .container2 {
