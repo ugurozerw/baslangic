@@ -137,6 +137,13 @@
   justify-content: center; /* Yatayda ortala */
   align-items: center; /* Dikeyde ortala */
   margin-top: 50%;
+  background-color: #fdcb6e;
+}
+
+
+.btnback-pos-signup:hover {
+  background-color: #e17055;
+  box-shadow: 2px 2px 2px 2px;
 }
 
 .disabled-link {
