@@ -1,0 +1,55 @@
+/* VeriCekmeComponent.css */
+
+.urun-kartlari {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1112px;
+    margin: 0 auto;
+  }
+  
+  .urun-karti {
+    flex-basis: calc(33.33% - 20px);
+    margin-bottom: 20px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .urun-karti:hover {
+    transform: scale(1.05);
+  }
+  
+  .urun-karti img {
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+  }
+  
+  .urun-karti h2 {
+    font-size: 1.2rem;
+    margin: 10px 0;
+  }
+  
+  .urun-karti p {
+    font-size: 1rem;
+    max-height: 60px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  .urun-karti button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .urun-karti button:hover {
+    background-color: #0056b3;
+  }
+
+  

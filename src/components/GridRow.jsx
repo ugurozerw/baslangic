@@ -1,9 +1,8 @@
 import React from 'react';
 import "./GridRow.css"
-import CarouselFadeExample from './CarouselFadeExample';
 import RightColumn1Items from './RightColumn1Items';
 import Badges from './little-things/badges';
-import { NewReleases } from '@mui/icons-material';
+import Products from "./products/Products.jsx"
 
 const GridRow = () => {
   return (
@@ -22,7 +21,7 @@ const GridRow = () => {
       aaa
     </div>
     <div className='rightColumn2'>
-      zzz
+      <Products></Products>
     </div>
   </div>
 </>
