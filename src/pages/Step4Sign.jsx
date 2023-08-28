@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Swal from 'sweetalert2';
 import "./sign.css"
 
 function Step4Sign() {
@@ -23,29 +24,44 @@ function Step4Sign() {
   const nextStep1 = () => {
     // Tüm gerekli alanları kontrol et
     if (formData.firstName === '' || formData.lastName === '') {
-      alert('İsim ve soyad bilgisini lütfen giriniz.');
+      Swal.fire({
+        icon: 'error',
+        title: 'Hata',
+        text: 'İsim ve soyad bilgisini lütfen giriniz.',
+      });
     } else {
       setCurrentStep(currentStep + 1);
     }
   };
 
-  const nextStep2 = () => {
-    // Tüm gerekli alanları kontrol et
-    if (formData.address === '') {
-      alert('Adres bilgisini lütfen giriniz.');
-    } else {
-      setCurrentStep(currentStep + 1);
-    }
-  };
 
-  const nextStep3 = () => {
-    // Tüm gerekli alanları kontrol et
-    if (formData.paymentMethod === '') {
-      alert('Ödeme yöntemini lütfen seçiniz.');
-    } else {
-      setCurrentStep(currentStep + 1);
-    }
-  };
+const nextStep2 = () => {
+  // Tüm gerekli alanları kontrol et
+  if (formData.address === '') {
+    Swal.fire({
+      icon: 'error',
+      title: 'Hata',
+      text: 'Adres bilgisini lütfen giriniz.',
+    });
+  } else {
+    setCurrentStep(currentStep + 1);
+  }
+};
+
+
+const nextStep3 = () => {
+  // Tüm gerekli alanları kontrol et
+  if (formData.paymentMethod === '') {
+    Swal.fire({
+      icon: 'error',
+      title: 'Hata',
+      text: 'Ödeme yöntemini lütfen seçiniz.',
+    });
+  } else {
+    setCurrentStep(currentStep + 1);
+  }
+};
+
 
   const nextStep4 = () => {
     setCurrentStep(currentStep + 1);
