@@ -1,10 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import Card from 'react-bootstrap/Card';
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
-
-import './products.css';
+import './products.css'; // Diğer stilleri burada ekleyin
 
 const VeriCekmeComponent = () => {
   const [veri, setVeri] = useState([]);
@@ -24,32 +19,30 @@ const VeriCekmeComponent = () => {
   }, []);
 
   const UrunKarti = ({ item }) => {
+    // İçerik uzunluğuna göre sınıf eklemesi yap
+    const kartSinifi = item.title.length > 50 ? 'urun-karti kucuk-icerik' : 'urun-karti';
+
     return (
-      <Col xs={12} sm={6} md={6} lg={4} xl={3} key={item.id} className="mb-4">
-        <Card className="urun-karti">
-          <Card.Img src={item.image} alt={item.title} />
-          <Card.Body>
-            <Card.Title>{item.title}</Card.Title>
-            <div className="aciklama">
-              <p>{item.description}</p>
-            </div>
-            <Card.Text>Fiyat: {item.price} TL</Card.Text>
-            <button className="btn btn-primary">Sepete Ekle</button>
-          </Card.Body>
-        </Card>
-      </Col>
+      <div className={kartSinifi}>
+        <img src={item.image} alt={item.title} />
+        <div className="icerik">
+          <h2>{item.title}</h2>
+          <p className="fiyat">Fiyat: {item.price} TL</p>
+          <button>Sepete Ekle</button>
+        </div>
+      </div>
     );
   };
 
   return (
-    <Container>
-      <h1 className="my-4">Ürünler</h1>
-      <Row className="urun-kartlari">
+    <div className="container mx-auto my-8">
+      <h1 className="text-2xl font-semibold mb-4">Ürünler</h1>
+      <div className="kartlar">
         {veri.map(item => (
           <UrunKarti key={item.id} item={item} />
         ))}
-      </Row>
-    </Container>
+      </div>
+    </div>
   );
 };
 
