@@ -3,15 +3,17 @@ import { Button } from 'react-bootstrap';
 import { BsFillArrowLeftCircleFill } from 'react-icons/bs';
 import { Link } from 'react-router-dom';
 import Step4Sign from './Step4Sign';
+import MultiStepIndex from '../components/MultiStepIndex/MultiStepIndex';
 
 const RandomImageGenerator = () => {
   const [randomNum, setRandomNum] = useState(null);
   const [isInvalid, setIsInvalid] = useState(false);
+  const [currentStep, setCurrentStep] = useState(1); // Kaçıncı adımda olduğunuzu saklıyoruz
   const brokenImageNumbers = [138, 286, 968, 394, 561, 751, 332, 589, 207, 587, 
                               843, 224, 897, 636, 333, 462, 624, 748, 752, 761, 
                               934, 105, 720, 734, 753, 422, 750, 854, 470, 749,
                               725, 359, 895, 150, 647, 150, 414, 754, 303, 578,
-                              632, 712, 762];
+                              632, 712, 762, 226];
 
   useEffect(() => {
     generateRandomNumber();
@@ -48,6 +50,7 @@ const RandomImageGenerator = () => {
             color: 'white',
             textAlign: 'center',
           }}>
+            <MultiStepIndex currentStep={currentStep} /> {/* Kaçıncı adımda olduğumuzu iletiyoruz */}
             <div className='disabled-link'>
               <Link to="/">
                 <Button className="btnback-pos-signup" size="md">
@@ -59,12 +62,11 @@ const RandomImageGenerator = () => {
                 float: 'right',
               }}>
                 <div className='spec4step4form'>
-                <Step4Sign></Step4Sign>
+                  <Step4Sign></Step4Sign>
                 </div>
               </div>
             </div>
           </div>
-          
         </div>
       )}
     </div>
