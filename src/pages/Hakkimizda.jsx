@@ -4,6 +4,7 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import { Placeholder } from 'react-bootstrap';
+import "./css/hakkimizda.css"
 
 const Hakkimizda = () => {
   return (
@@ -12,7 +13,7 @@ const Hakkimizda = () => {
 
     <Container>
       <Row>
-        <Col><div>Hakkımızda</div></Col>
+        <Col><h1>Hakkımızda</h1></Col>
       </Row>
 
     
@@ -33,7 +34,18 @@ const Hakkimizda = () => {
             <img src="https://picsum.photos/id/17/526/160" alt="" />
           </Col>
       </Row>
-    </Container>
+      </Container>
+
+      <Row className='sec-bet'>
+        <Col><h2>+150K Order</h2></Col>
+        <Col><h2>1 Million 
+          Share 
+          on Web</h2></Col>
+        <Col><h2>+150K Order</h2></Col>
+        <Col><h2>+150K Order</h2></Col>
+        <Col><h2>+150K Order</h2></Col>
+      </Row>
+    
     </>
   )
 }
