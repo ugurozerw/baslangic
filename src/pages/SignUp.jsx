@@ -3,7 +3,7 @@ import { Button } from 'react-bootstrap';
 import { BsFillArrowLeftCircleFill } from 'react-icons/bs';
 import { Link } from 'react-router-dom';
 import Step4Sign from './Step4Sign';
-import MultiStepIndex from '../components/MultiStepIndex/MultiStepIndex';
+
 
 const RandomImageGenerator = () => {
   const [randomNum, setRandomNum] = useState(null);
@@ -50,7 +50,6 @@ const RandomImageGenerator = () => {
             color: 'white',
             textAlign: 'center',
           }}>
-            <MultiStepIndex currentStep={currentStep} /> {/* Kaçıncı adımda olduğumuzu iletiyoruz */}
             <div className='disabled-link'>
               <Link to="/">
                 <Button className="btnback-pos-signup" size="md">
