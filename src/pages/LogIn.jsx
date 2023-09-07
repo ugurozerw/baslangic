@@ -5,6 +5,7 @@ import { BsFillArrowLeftCircleFill } from 'react-icons/bs';
 import { Link } from "react-router-dom"
 import '../pages/css/cssforpages.css';
 import { FormText } from 'react-bootstrap';
+import Footer from './Footer'
 
 const brokenImageNumbers = [138, 286, 968, 394, 561, 751, 332, 589, 207, 587, 
                             843, 224, 897, 636, 333, 462, 624, 748, 752, 761, 

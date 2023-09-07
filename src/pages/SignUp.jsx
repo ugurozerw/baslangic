@@ -69,6 +69,7 @@ const RandomImageGenerator = () => {
         </div>
       )}
     </div>
+    
   );
 }
 
