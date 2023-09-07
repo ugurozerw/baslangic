@@ -28,7 +28,7 @@ const Hakkimizda = () => {
               eveniet, aliquam id impedit doloribus!</div>
           </Col>
           <Col sm={5}>
-          <img src="https://picsum.photos/id/17/526/160" alt="" />
+          <img src="https://picsum.photos/id/17/526/160"/>
 
           </Col>
       </Row>
@@ -39,6 +39,41 @@ const Hakkimizda = () => {
         <Col><h2>1 Million Share on Web</h2></Col>
         <Col><h2>3000 Products</h2></Col>
 
+        <ul>
+          <li>Madde 1</li>
+          <li>Madde 2</li>
+          <li>Madde 3</li>
+          <li>Madde 4</li>
+          <li>Madde 5</li>
+        </ul>
+
+        <ul>
+          <li>Madde 1</li>
+          <li>Madde 2</li>
+          <li>Madde 3</li>
+          <li>Madde 4</li>
+          <li>Madde 5</li>
+        </ul>
+
+        <ul>
+          <li><h5>Madde 1</h5></li>
+          <li>Madde 2</li>
+          <li>Madde 3</li>
+          <li>Madde 4</li>
+          <li>Madde 5</li>
+        </ul>
+      </Row>
+
+      <Row>
+        <div>
+
+          a
+          <br /><br /><br /><br />
+          a
+          <br /><br /><br /><br />
+          a
+
+        </div>
       </Row>
     
     </>

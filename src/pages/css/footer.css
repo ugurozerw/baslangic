@@ -1,0 +1,79 @@
+/* Footer stilini düzenle */
+
+.footer {
+    background-color: #2d3436;
+    color: #fff;
+    padding: 50px 0;
+    margin-top: 50px;
+  }
+  
+  .footer__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .footer__info {
+    flex: 1;
+  }
+  
+  .footer__info h2 {
+    font-size: 24px;
+  }
+  
+  .footer__links,
+  .footer__contact,
+  .footer__social {
+    flex: 1;
+    margin-right: 20px;
+  }
+  
+  .footer__links h3,
+  .footer__contact h3,
+  .footer__social h3 {
+    font-size: 18px;
+  }
+  
+  .footer__links ul,
+  .footer__contact p {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer__links ul li,
+  .footer__contact p {
+    margin-bottom: 10px;
+  }
+  
+  .footer__links a,
+  .footer__social a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .footer__links a:hover,
+  .footer__social a:hover {
+    color: #0984e3;
+  }
+  
+  .footer__bottom {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #636e72;
+  }
+  
+  .footer__bottom p {
+    margin: 0;
+    font-size: 14px;
+  }
+  
+  /* Sosyal medya ikonlarını özelleştir */
+  .footer__social i {
+    margin-right: 8px;
+    font-size: 20px;
+  }
+  
