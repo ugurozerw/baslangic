@@ -13,14 +13,13 @@ const Hakkimizda = () => {
 
     <Container>
       <Row>
-        <Col><h1>Hakkımızda</h1></Col>
+        <Col className='marg-top'><h1>Hakkımızda</h1></Col>
       </Row>
 
     
 
       <Row>
           <Col sm={7}>
-            <Placeholder sm={12} bg="success"></Placeholder>
             <div>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde reiciendis voluptatum, at possimus incidunt 
               laudantium nesciunt placeat ad hic debitis autem voluptatibus sint quaerat delectus temporibus qui quis animi 
               non blanditiis quos. Autem quidem dolor atque amet veritatis et quod architecto incidunt necessitatibus consectetur 
@@ -30,20 +29,17 @@ const Hakkimizda = () => {
               eveniet, aliquam id impedit doloribus!</div>
           </Col>
           <Col sm={5}>
-            <Placeholder sm={12} bg="danger"></Placeholder>
-            <img src="https://picsum.photos/id/17/526/160" alt="" />
+          <img src="https://picsum.photos/id/17/526/160" alt="" />
+
           </Col>
       </Row>
       </Container>
-
+      
       <Row className='sec-bet'>
         <Col><h2>+150K Order</h2></Col>
-        <Col><h2>1 Million 
-          Share 
-          on Web</h2></Col>
-        <Col><h2>+150K Order</h2></Col>
-        <Col><h2>+150K Order</h2></Col>
-        <Col><h2>+150K Order</h2></Col>
+        <Col><h2>1 Million Share on Web</h2></Col>
+        <Col><h2>3000 Products</h2></Col>
+
       </Row>
     
     </>

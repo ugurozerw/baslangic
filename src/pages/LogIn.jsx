@@ -3,7 +3,7 @@ import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 import { BsFillArrowLeftCircleFill } from 'react-icons/bs';
 import { Link } from "react-router-dom"
-import './cssforpages.css';
+import '../pages/css/cssforpages.css';
 import { FormText } from 'react-bootstrap';
 
 const brokenImageNumbers = [138, 286, 968, 394, 561, 751, 332, 589, 207, 587, 
