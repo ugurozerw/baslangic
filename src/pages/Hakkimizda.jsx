@@ -4,6 +4,8 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Footer from './Footer'
+import { BsFillBasket2Fill, BsShareFill, BsStack } from "react-icons/bs";
+
 import "./css/hakkimizda.css"
 
 const Hakkimizda = () => {
@@ -35,46 +37,29 @@ const Hakkimizda = () => {
       </Row>
       </Container>
       
-      <Row className='sec-bet'>
-        <Col><h2>+150K Order</h2></Col>
-        <Col><h2>1 Million Share on Web</h2></Col>
-        <Col><h2>3000 Products</h2></Col>
-
-        <ul>
-          <li>Madde 1</li>
-          <li>Madde 2</li>
-          <li>Madde 3</li>
-          <li>Madde 4</li>
-          <li>Madde 5</li>
-        </ul>
-
-        <ul>
-          <li>Madde 1</li>
-          <li>Madde 2</li>
-          <li>Madde 3</li>
-          <li>Madde 4</li>
-          <li>Madde 5</li>
-        </ul>
-
-        <ul>
-          <li><h5>Madde 1</h5></li>
-          <li>Madde 2</li>
-          <li>Madde 3</li>
-          <li>Madde 4</li>
-          <li>Madde 5</li>
-        </ul>
+      <Row className='bckgrnd'>
+        <Col className='sec-bet'>
+          <BsFillBasket2Fill className='ico' />
+          <h2>+150K Order</h2>
+        </Col>
+        <Col className='sec-bet'>
+          <BsShareFill className='ico' />
+          <h2>1 Million+ Share on Web</h2>
+        </Col>
+        <Col className='sec-bet'>
+          <BsStack className='ico' />
+          <h2>3000+ Products</h2>
+        </Col>
       </Row>
 
-      <Row>
-        <div>
+      <Row className='bckgrnd'>
+        <Col className='sec-bet'>
 
-          a
-          <br /><br /><br /><br />
-          a
-          <br /><br /><br /><br />
-          a
+        </Col>
 
-        </div>
+        <Col className='sec-bet'>
+
+        </Col>
       </Row>
       <Footer/>
     </>

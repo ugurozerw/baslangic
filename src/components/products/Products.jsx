@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import './products.css'; // Diğer stilleri burada ekleyin
+
+import './products.css';
 
 const VeriCekmeComponent = () => {
   const [veri, setVeri] = useState([]);
