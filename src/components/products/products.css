@@ -23,8 +23,9 @@
 }
 
 .urun-karti img {
-  max-width: 100%;
+  width: 300px;
   height: auto;
+  max-width: 100%;
 }
 
 .urun-karti .icerik {
