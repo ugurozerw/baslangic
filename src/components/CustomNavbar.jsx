@@ -27,7 +27,6 @@ const CustomNavbar = () => {
 
           <Link to="/" className="custom-navbar-elements">Anasayfa</Link>
           <Link to="/Hakkimizda" className="custom-navbar-elements">Hakkimizda</Link>
-          <Link to="/Hizmetler" className="custom-navbar-elements">Hizmetler</Link>
           <Link to="/Iletisim" className="custom-navbar-elements">İletişim</Link>
           </Nav>
 
