@@ -57,9 +57,9 @@ const Hakkimizda = () => {
           <BsStack className='ico' /><br />
           <h2>3000+ Products</h2>
         </Col>
-      </Row>
       
-      <Row className='bckgrnd'>
+      
+      
         <Col className='sec-bet'>
         <div className='x'> <BsFill7SquareFill className='ico'/> <BsArrowDownLeft  className='ico'/> <BsFill2CircleFill className='ico'/> <BsFill4CircleFill className='ico'/> </div>
         <br />
@@ -76,8 +76,43 @@ const Hakkimizda = () => {
          
         </Col>
       </Row>
+
+      <Row className='sec3'>
+        <Col> <img className='picturepos' src="https://picsum.photos/id/19/600/540"/> </Col>
+        <Col> 
+          <h2 className='cen'>Lorem ipsum dolor sit amet</h2> 
+          <div className='edt'>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, quasi. 
+              Ad earum eius sunt possimus! In, error corrupti. Optio, reprehenderit?</p>
+
+              <p>Mollitia architecto id facilis quidem. Sint iure earum rerum architecto, 
+            itaque exercitationem voluptatibus distinctio, excepturi eveniet</p>
+
+            <p>ipsum ad ducimus qui illum. Voluptatem corporis temporibus saepe dolores 
+            officiis deserunt quidem animi perspiciatis sequi.</p>
+
+            <p>Mollitia architecto id facilis quidem. Sint iure earum rerum architecto, 
+            itaque exercitationem voluptatibus distinctio, excepturi eveniet</p>
+
+            <p>ipsum ad ducimus qui illum. Voluptatem corporis temporibus saepe dolores 
+            officiis deserunt quidem animi perspiciatis sequi.</p>
+
+            <p>Mollitia architecto id facilis quidem. Sint iure earum rerum architecto, 
+            itaque exercitationem voluptatibus distinctio, excepturi eveniet</p>
+
+            <p>ipsum ad ducimus qui illum. Voluptatem corporis temporibus saepe dolores 
+            officiis deserunt quidem animi perspiciatis sequi.</p>
+
+            <p>Mollitia architecto id facilis quidem. Itaque exercitationem voluptatibus</p>
+
+          </div>
+        </Col>
+      </Row>
+
       <Footer/>
+      
     </>
+    
   )
 }
 
