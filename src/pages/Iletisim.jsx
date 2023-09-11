@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react";
 import CustomNavbar from "../components/CustomNavbar";
+import Footer from "./Footer"
+import "./css/iletisim.css"
 
 const ContactPage = () => {
   const [name, setName] = useState("");
