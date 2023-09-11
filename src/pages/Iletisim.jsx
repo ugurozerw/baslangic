@@ -5,30 +5,31 @@ const ContactPage = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
-  const [emailError, setEmailError] = useState("");
+  const [nameError, setNameError] = useState(false); // Hata başlangıçta false
+  const [emailError, setEmailError] = useState(false); // Hata başlangıçta false
 
   const onSubmit = (e) => {
     e.preventDefault();
     let hasError = false; // Hata kontrolü için bir bayrak
-  
+
     // Ad alanını kontrol et
     if (!name) {
       setNameError(true);
       hasError = true;
     } else {
-      setNameError(false);
+      setNameError(false); // Hata yoksa hata sınıfını kaldır
     }
-  
+
     // E-posta adresini kontrol et
     if (!validateEmail(email)) {
       setEmailError(true);
       hasError = true;
     } else {
-      setEmailError(false);
+      setEmailError(false); // Hata yoksa hata sınıfını kaldır
     }
-  
+
     // Diğer form alanlarını kontrol et
-  
+
     if (hasError) {
       // Hata varsa formun etrafına kırmızı sınır ekler
       document.querySelector("form").classList.add("error-border");
@@ -40,31 +41,11 @@ const ContactPage = () => {
     }
   };
 
-  const handleMessageChange = (e) => {
-    setMessage(e.target.value);
-  };
-
-  const handleNameChange = (e) => {
-    setName(e.target.value);
-  };
-
-  const handleEmailChange = (e) => {
-    setEmail(e.target.value);
-  };
-
+  // E-posta doğrulama fonksiyonu
   const validateEmail = (email) => {
     const regex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
     return regex.test(email);
   };
-
-  useEffect(() => {
-    // E-posta adresi değiştiğinde, hata mesajını güncelle
-    if (!validateEmail(email)) {
-      setEmailError("E-posta adresi geçersizdir.");
-    } else {
-      setEmailError(""); // Hata mesajını temizle
-    }
-  }, [email]);
 
   return (
     <>
@@ -78,10 +59,15 @@ const ContactPage = () => {
                 <label htmlFor="name">Adınız</label>
                 <input
                   type="text"
-                  className="form-control form-control-lg my-2"
+                  className={`form-control form-control-lg my-2 ${
+                    nameError ? "error-border" : "" // Hata durumuna göre sınıf ekler
+                  }`}
                   id="name"
                   value={name}
-                  onChange={handleNameChange}
+                  onChange={(e) => {
+                    setName(e.target.value);
+                    setNameError(false); // Ad düzeltilince hata sınıfını kaldır
+                  }}
                 />
                 {!name && (
                   <small className="form-text text-muted">Adınızı girin</small>
@@ -91,13 +77,18 @@ const ContactPage = () => {
                 <label htmlFor="email">E-posta adresiniz</label>
                 <input
                   type="email"
-                  className="form-control form-control-lg my-2"
+                  className={`form-control form-control-lg my-2 ${
+                    emailError ? "error-border" : "" // Hata durumuna göre sınıf ekler
+                  }`}
                   id="email"
                   value={email}
-                  onChange={handleEmailChange}
+                  onChange={(e) => {
+                    setEmail(e.target.value);
+                    setEmailError(false); // E-posta düzeltilince hata sınıfını kaldır
+                  }}
                 />
                 {emailError && (
-                  <span className="text-danger">{emailError}</span>
+                  <span className="text-danger">E-posta adresi geçersizdir.</span>
                 )}
               </div>
               <div className="form-group">
@@ -106,7 +97,7 @@ const ContactPage = () => {
                   className="form-control form-control-lg my-2"
                   id="message"
                   value={message}
-                  onChange={handleMessageChange}
+                  onChange={(e) => setMessage(e.target.value)}
                 />
               </div>
               <button
